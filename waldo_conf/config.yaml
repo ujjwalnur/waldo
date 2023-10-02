@@ -1,3 +1,0 @@
-defaults:
-  - experiment: imagenet
-  - _self_

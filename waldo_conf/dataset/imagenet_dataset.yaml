@@ -1,3 +1,0 @@
-name: imagenet
-tfrecord_dir: /media/homes/ujjwal/datasets/imagenet2012/tfrecords
-batch_size: 32
