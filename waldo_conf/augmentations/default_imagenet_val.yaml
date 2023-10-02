@@ -1,0 +1,12 @@
+---
+_target_: augmentations.ops.AugmentationList
+transforms:
+  - _target_: augmentations.ops.ResizeExplicit
+    p: 1.0
+    new_height : 224
+    new_width: 224
+
+  - _target_: augmentations.ops.NormalizeImageRange
+    p : 1.0
+
+...

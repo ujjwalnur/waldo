@@ -1,0 +1,25 @@
+---
+_target_: augmentations.ops.AugmentationList
+transforms:
+  - _target_: augmentations.ops.ResizeSmallest
+    p: 1.0
+    resize_dim: 256
+
+  - _target_: augmentations.ops.RandomCrop
+    p: 1.0
+    crop_height: 224
+    crop_width: 224
+
+  - _target_: augmentations.ops.HorizontalFlip
+    p: 0.5
+
+  - _target_: augmentations.ops.Grayscale
+    p : 0.2
+
+  - _target_: augmentations.ops.BrightnessContrast
+    p : 0.3
+
+  - _target_: augmentations.ops.NormalizeImageRange
+    p : 1.0
+
+...
